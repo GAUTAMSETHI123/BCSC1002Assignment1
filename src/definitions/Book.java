@@ -15,11 +15,23 @@ public class Book {
         return bookName;
     }
 
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
+    }
+
     public String getAuthorOfTheBook() {
         return authorOfTheBook;
     }
 
+    public void setAuthorOfTheBook(String authorOfTheBook) {
+        this.authorOfTheBook = authorOfTheBook;
+    }
+
     public String getBookISBN() {
         return bookISBN;
+    }
+
+    public void setBookISBN(String bookISBN) {
+        this.bookISBN = bookISBN;
     }
 }
