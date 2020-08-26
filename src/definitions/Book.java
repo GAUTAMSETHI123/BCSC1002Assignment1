@@ -41,4 +41,13 @@ public class Book {
         this.bookISBN = bookISBN;
     }
 
+    public String toString() {
+        return "Book name is: " + getBookName() + "," + "author name is: "
+                + getAuthorOfTheBook() + "," + "ISBN number is: " + getBookISBN() + ".";
+
+    }
+
+
 }
+
+
