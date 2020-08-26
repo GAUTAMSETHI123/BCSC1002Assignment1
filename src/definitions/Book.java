@@ -11,6 +11,12 @@ public class Book {
     String authorOfTheBook;
     String bookISBN;
 
+    public Book() {
+        this.bookName = getBookName();
+        this.authorOfTheBook = getAuthorOfTheBook();
+        this.bookISBN = getBookISBN();
+    }
+
     public String getBookName() {
         return bookName;
     }
@@ -34,4 +40,5 @@ public class Book {
     public void setBookISBN(String bookISBN) {
         this.bookISBN = bookISBN;
     }
+
 }
