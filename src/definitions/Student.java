@@ -14,6 +14,14 @@ public class Student {
     int noOfBooksIssued;
     private Book[] book;
 
+    public Student() {
+        this.book = new Book[5];
+        for (int i = 0; i < book.length; i++) {
+            book[i] = new Book();
+
+        }
+    }
+
 
     public String getFirstName() {
         return firstName;
