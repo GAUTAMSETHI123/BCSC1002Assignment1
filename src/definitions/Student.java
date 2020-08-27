@@ -98,4 +98,12 @@ public class Student {
         result = 31 * result + Arrays.hashCode(getBook());
         return result;
     }
+
+    public void printBookArray() {
+        for (Book books : this.book
+        ) {
+            System.out.println(books);
+
+        }
+    }
 }
