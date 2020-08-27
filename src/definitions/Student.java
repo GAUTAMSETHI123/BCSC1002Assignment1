@@ -6,6 +6,8 @@
  * */
 package definitions;
 
+import java.util.Arrays;
+
 public class Student {
     String firstName;
     String middleName;
@@ -69,6 +71,11 @@ public class Student {
 
     public void setBook(Book[] book) {
         this.book = book;
+    }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(book);
     }
 
 
