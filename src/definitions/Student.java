@@ -6,13 +6,17 @@
  * */
 package definitions;
 
+
 import java.util.Arrays;
 import java.util.Objects;
+import java.util.Scanner;
 
 public class Student {
-    String firstName;
-    String middleName;
-    String lastName;
+    Scanner scanner = new Scanner(System.in);
+    private String fullName;
+    private String firstName;
+    private String middleName;
+    private String lastName;
     long universityRollNo;
     int noOfBooksIssued;
     private Book[] book;
@@ -25,6 +29,13 @@ public class Student {
         }
     }
 
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -105,5 +116,14 @@ public class Student {
             System.out.println(books);
 
         }
+    }
+
+    /**
+     * this method is used to take university roll no as input from the student
+     */
+
+    public void enterUniRollNo() {
+        System.out.println("please enter your university roll no " + fullName);
+        universityRollNo = scanner.nextLong();
     }
 }
