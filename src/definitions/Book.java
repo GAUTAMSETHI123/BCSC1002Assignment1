@@ -7,6 +7,7 @@
 package definitions;
 
 import java.util.Objects;
+import java.util.Scanner;
 
 public class Book {
     String bookName;
@@ -62,6 +63,17 @@ public class Book {
     public int hashCode() {
         return Objects.hash(getBookName(), getAuthorOfTheBook(), getBookISBN());
     }
+
+    /**
+     * this method allows the student to issue the book.
+     */
+    public void issueBookName() {
+        Scanner scanner = new Scanner(System.in);
+        bookName = scanner.nextLine();
+        System.out.println("\"" + bookName + "\" is now issued for you");
+        System.out.println("Thank You!");
+    }
 }
+
 
 
