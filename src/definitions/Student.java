@@ -119,6 +119,22 @@ public class Student {
     }
 
     /**
+     * this method is used to take name as input from the student.
+     */
+
+    public void studentDetails() {
+        System.out.println("enter first name");
+        firstName = scanner.nextLine();
+        System.out.println("enter middle name");
+        middleName = scanner.nextLine();
+        System.out.println("enter last name");
+        lastName = scanner.nextLine();
+        fullName = firstName + " " + middleName + " " + lastName;
+        System.out.println("Your full name is: " + fullName);
+    }
+
+
+    /**
      * this method is used to take university roll no as input from the student
      */
 
