@@ -50,6 +50,7 @@ public class Book {
         this.bookISBN = bookISBN;
     }
 
+    @Override
     public String toString() {
         return "Book name is: " + getBookName() + "," + "author name is: "
                 + getAuthorOfTheBook() + "," + "ISBN number is: " + getBookISBN() + ".";
@@ -76,8 +77,19 @@ public class Book {
     public void issueBookName() {
         Scanner scanner = new Scanner(System.in);
         bookName = scanner.nextLine();
+    }
+
+    public void messageForTheIssuedBook() {
         System.out.println("\"" + bookName + "\" is now issued for you");
         System.out.println("Thank You!");
+    }
+
+    /**
+     * this method is used to print heading message for the issued book.
+     */
+
+    public void detailsOfTheBook() {
+        System.out.println("Details of the issued book are as follows : ");
     }
 
     /**
@@ -91,6 +103,8 @@ public class Book {
         System.out.println("\"" + nameOfBook + "\" is restored in the library database");
         System.out.println("THANK YOU!");
     }
+
+
 }
 
 
