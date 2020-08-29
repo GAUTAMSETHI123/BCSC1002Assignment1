@@ -95,7 +95,6 @@ public class Student {
         return Objects.hash(scanner, getFullName(), getFirstName(), getMiddleName(), getLastName(), getUniversityRollNo(), getNoOfBooksIssued());
     }
 
-
     /**
      * this method is used to take name as input from the student.
      */
