@@ -7,7 +7,6 @@
 package definitions;
 
 
-import java.util.Arrays;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -17,17 +16,20 @@ public class Student {
     private String firstName;
     private String middleName;
     private String lastName;
-    long universityRollNo;
-    int noOfBooksIssued;
-    private Book[] book;
+    private long universityRollNo;
+    private int noOfBooksIssued;
+
 
     public Student() {
-        this.book = new Book[5];
-        for (int i = 0; i < book.length; i++) {
-            book[i] = new Book();
+        this.fullName = getFullName();
+        this.firstName = getFirstName();
+        this.middleName = getMiddleName();
+        this.lastName = getLastName();
+        this.universityRollNo = getUniversityRollNo();
+        this.noOfBooksIssued = getNoOfBooksIssued();
 
-        }
     }
+
 
     public String getFullName() {
         return fullName;
@@ -77,18 +79,6 @@ public class Student {
         this.noOfBooksIssued = noOfBooksIssued;
     }
 
-    public Book[] getBook() {
-        return book.clone();
-    }
-
-    public void setBook(Book[] book) {
-        this.book = book;
-    }
-
-    @Override
-    public String toString() {
-        return Arrays.toString(book);
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -97,25 +87,16 @@ public class Student {
         Student student = (Student) o;
         return getUniversityRollNo() == student.getUniversityRollNo() &&
                 getNoOfBooksIssued() == student.getNoOfBooksIssued() &&
+                Objects.equals(scanner, student.scanner) &&
+                Objects.equals(getFullName(), student.getFullName()) &&
                 Objects.equals(getFirstName(), student.getFirstName()) &&
                 Objects.equals(getMiddleName(), student.getMiddleName()) &&
-                Objects.equals(getLastName(), student.getLastName()) &&
-                Arrays.equals(getBook(), student.getBook());
+                Objects.equals(getLastName(), student.getLastName());
     }
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(getFirstName(), getMiddleName(), getLastName(), getUniversityRollNo(), getNoOfBooksIssued());
-        result = 31 * result + Arrays.hashCode(getBook());
-        return result;
-    }
-
-    public void printBookArray() {
-        for (Book books : this.book
-        ) {
-            System.out.println(books);
-
-        }
+        return Objects.hash(scanner, getFullName(), getFirstName(), getMiddleName(), getLastName(), getUniversityRollNo(), getNoOfBooksIssued());
     }
 
     /**

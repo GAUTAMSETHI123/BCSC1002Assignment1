@@ -10,9 +10,9 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class Book {
-    String bookName;
-    String authorOfTheBook;
-    String bookISBN;
+    private String bookName;
+    private String authorOfTheBook;
+    private String bookISBN;
 
     public Book() {
         this.bookName = getBookName();
@@ -20,10 +20,10 @@ public class Book {
         this.bookISBN = getBookISBN();
     }
 
-    public Book(String bookName, String authorOfTheBook, String bookISBN) {
-        this.bookName = getBookName();
-        this.authorOfTheBook = getAuthorOfTheBook();
-        this.bookISBN = getBookISBN();
+    public Book(String bookName) {
+        this.bookName = bookName;
+        this.authorOfTheBook = "UNKNOWN";
+        this.bookISBN = "NOT ASSIGNED";
     }
 
     public String getBookName() {
