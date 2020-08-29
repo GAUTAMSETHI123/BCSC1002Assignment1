@@ -79,6 +79,10 @@ public class Book {
         bookName = scanner.nextLine();
     }
 
+    /**
+     * this method is used to print Thank you message for the issued book.
+     */
+
     public void messageForTheIssuedBook() {
         System.out.println("\"" + bookName + "\" is now issued for you");
         System.out.println("Thank You!");
