@@ -109,7 +109,6 @@ public class Student {
         System.out.println("Your full name is: " + fullName);
     }
 
-
     /**
      * this method is used to take university roll no as input from the student
      */
