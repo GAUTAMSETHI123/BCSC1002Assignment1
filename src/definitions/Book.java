@@ -1,5 +1,5 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
+ *  User: Gautam Sethi (GAUTAMSETHI123)
  *  Date: 21/08/20
  *  Time: 3:49 PM
  *  File Name : Book.java
@@ -72,6 +72,18 @@ public class Book {
         bookName = scanner.nextLine();
         System.out.println("\"" + bookName + "\" is now issued for you");
         System.out.println("Thank You!");
+    }
+
+    /**
+     * this method is used to return the issued book.
+     *
+     * @param nameOfBook name of the book which is to be returned.
+     */
+
+    public void restoreBook(String nameOfBook) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\"" + nameOfBook + "\" is restored in the library database");
+        System.out.println("THANK YOU!");
     }
 }
 
