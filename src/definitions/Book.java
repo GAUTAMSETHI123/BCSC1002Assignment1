@@ -104,7 +104,15 @@ public class Book {
         System.out.println("THANK YOU!");
     }
 
+    /**
+     * this method is used to print the issued book details.
+     */
 
+    public void detailsOfTheIssuedBook() {
+        System.out.println("Name of the issued book: " + bookName);
+        System.out.println("Name of the author: N/a");
+        System.out.println("Book ISBN no: N/a");
+    }
 }
 
 
