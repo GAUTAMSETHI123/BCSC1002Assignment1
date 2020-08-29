@@ -21,9 +21,16 @@ public class Library {
     public Book[] getShowBook() {
         return showBook;
     }
+
     public void setShowBook(Book[] showBook) {
         this.showBook = showBook.clone();
     }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(showBook);
+    }
+
 
     @Override
     public boolean equals(Object o) {
