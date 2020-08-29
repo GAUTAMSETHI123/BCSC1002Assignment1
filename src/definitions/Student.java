@@ -19,7 +19,6 @@ public class Student {
     private long universityRollNo;
     private int noOfBooksIssued;
 
-
     public Student() {
         this.fullName = getFullName();
         this.firstName = getFirstName();
@@ -27,9 +26,7 @@ public class Student {
         this.lastName = getLastName();
         this.universityRollNo = getUniversityRollNo();
         this.noOfBooksIssued = getNoOfBooksIssued();
-
     }
-
 
     public String getFullName() {
         return fullName;
@@ -79,7 +76,6 @@ public class Student {
         this.noOfBooksIssued = noOfBooksIssued;
     }
 
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -99,10 +95,10 @@ public class Student {
         return Objects.hash(scanner, getFullName(), getFirstName(), getMiddleName(), getLastName(), getUniversityRollNo(), getNoOfBooksIssued());
     }
 
+
     /**
      * this method is used to take name as input from the student.
      */
-
     public void studentDetails() {
         System.out.println("enter first name");
         firstName = scanner.nextLine();
@@ -118,7 +114,6 @@ public class Student {
     /**
      * this method is used to take university roll no as input from the student
      */
-
     public void enterUniRollNo() {
         System.out.println("please enter your university roll no " + fullName);
         universityRollNo = scanner.nextLong();

@@ -43,6 +43,9 @@ public class FrontDesk {
                     System.out.println("students details saved!");
                     System.out.println("Enter the name of the book you want to issue!");
                     book.issueBookName();
+                    book.detailsOfTheBook();
+                    book.detailsOfTheIssuedBook();
+                    book.messageForTheIssuedBook();
                     break;
                 case RETURN_BOOKS:
                     System.out.println("Enter the name of the book you want to return to the management");

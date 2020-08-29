@@ -15,17 +15,14 @@ public class Library {
         this.showBook = new Book[5];
         for (int i = 0; i < showBook.length; i++) {
             showBook[i] = new Book("Book " + (i + 1));
-
         }
-
     }
 
     public Book[] getShowBook() {
         return showBook;
     }
-
     public void setShowBook(Book[] showBook) {
-        this.showBook = showBook;
+        this.showBook = showBook.clone();
     }
 
     @Override
@@ -41,13 +38,12 @@ public class Library {
         return Arrays.hashCode(getShowBook());
     }
 
+
     public void showIssuedBooks() {
         for (Book books : this.showBook
         ) {
             System.out.println(books);
-
         }
-
     }
 }
 
