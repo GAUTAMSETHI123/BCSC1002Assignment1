@@ -96,17 +96,7 @@ public class Book {
         System.out.println("Details of the issued book are as follows : ");
     }
 
-    /**
-     * this method is used to return the issued book.
-     *
-     * @param nameOfBook name of the book which is to be returned.
-     */
 
-    public void restoreBook(String nameOfBook) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("\"" + nameOfBook + "\" is restored in the library database");
-        System.out.println("THANK YOU!");
-    }
 
     /**
      * this method is used to print the issued book details.

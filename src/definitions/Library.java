@@ -7,6 +7,7 @@
 package definitions;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Library {
     private Book[] showBook;
@@ -24,6 +25,18 @@ public class Library {
 
     public void setShowBook(Book[] showBook) {
         this.showBook = showBook.clone();
+    }
+
+    /**
+     * this method is used to return the issued book.
+     *
+     * @param nameOfBook name of the book which is to be returned.
+     */
+
+    public void restoreBook(String nameOfBook) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\"" + nameOfBook + "\" is restored in the library database");
+        System.out.println("THANK YOU!");
     }
 
     @Override
