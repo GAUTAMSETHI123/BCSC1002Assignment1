@@ -129,5 +129,4 @@ public class Student {
         universityRollNo = scanner.nextLong();
 
     }
-
 }

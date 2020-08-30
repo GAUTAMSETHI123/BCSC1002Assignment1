@@ -19,7 +19,6 @@ public class Book {
         this.authorOfTheBook = getAuthorOfTheBook();
         this.bookISBN = getBookISBN();
     }
-
     public Book(String bookName) {
         this.bookName = bookName;
         this.authorOfTheBook = "UNKNOWN";
@@ -96,8 +95,6 @@ public class Book {
     public void detailsOfTheBook() {
         System.out.println("Details of the issued book are as follows : ");
     }
-
-
 
     /**
      * this method is used to print the issued book details.

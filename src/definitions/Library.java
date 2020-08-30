@@ -59,7 +59,6 @@ public class Library {
         return Arrays.hashCode(getShowBook());
     }
 
-
     public void showIssuedBooks() {
         for (Book books : this.showBook
         ) {

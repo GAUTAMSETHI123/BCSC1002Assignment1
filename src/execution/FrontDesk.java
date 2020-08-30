@@ -19,7 +19,6 @@ public class FrontDesk {
     public static final int EXIT = 4;
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
         int studentResponse;
         String returnBook;
@@ -58,10 +57,7 @@ public class FrontDesk {
                     library.showIssuedBooks();
                     break;
             }
-
         } while (studentResponse != EXIT);
         scanner.close();
-
-
     }
 }
