@@ -7,6 +7,7 @@
 package definitions;
 
 
+import java.util.Arrays;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -99,6 +100,12 @@ public class Student {
     @Override
     public int hashCode() {
         return Objects.hash(scanner, getFullName(), getFirstName(), getMiddleName(), getLastName(), getUniversityRollNo(), getNoOfBooksIssued());
+    }
+
+    @Override
+    public String toString() {
+        return "Student full name = " + fullName + "studentFirstName='" + firstName + '\'' + ", studentMiddleName='" + middleName + '\'' + ", studentLastName='" + lastName + '\'' + ", univRollNo=" + universityRollNo +
+                ", issuedBookNumbers=" + noOfBooksIssued + ", bookIssued=" + Arrays.toString(showBook);
     }
 
     /**
