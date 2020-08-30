@@ -21,8 +21,7 @@ public class Student {
     private int noOfBooksIssued;
     private Book[] showBook;
 
-    public Student(String fullName, String firstName, String middleName, String lastName, long universityRollNo,
-                   int noOfBooksIssued) {
+    public Student() {
         this.fullName = getFullName();
         this.firstName = getFirstName();
         this.middleName = getMiddleName();

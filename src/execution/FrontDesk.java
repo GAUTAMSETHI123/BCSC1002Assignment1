@@ -59,6 +59,7 @@ public class FrontDesk {
             }
 
         } while (studentResponse != EXIT);
+        scanner.close();
 
 
     }
