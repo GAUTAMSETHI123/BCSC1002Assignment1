@@ -77,6 +77,7 @@ public class Book {
     public void issueBookName() {
         Scanner scanner = new Scanner(System.in);
         bookName = scanner.nextLine();
+
     }
 
     /**

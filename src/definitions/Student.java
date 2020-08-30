@@ -127,5 +127,7 @@ public class Student {
     public void enterUniRollNo() {
         System.out.println("please enter your university roll no " + fullName);
         universityRollNo = scanner.nextLong();
+
     }
+
 }
