@@ -51,7 +51,7 @@ public class FrontDesk {
                     System.out.println("Enter the name of the book you want to return to the management");
                     scanner.nextLine();
                     returnBook = scanner.nextLine();
-                    book.restoreBook(returnBook);
+                    library.restoreBook(returnBook);
                 case ISSUED_BOOKS:
                     System.out.println("your issued books are: ");
                     library.showIssuedBooks();
