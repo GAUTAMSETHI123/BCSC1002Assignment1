@@ -52,6 +52,7 @@ public class FrontDesk {
                     scanner.nextLine();
                     returnBook = scanner.nextLine();
                     library.restoreBook(returnBook);
+                    break;
                 case ISSUED_BOOKS:
                     System.out.println("your issued books are: ");
                     library.showIssuedBooks();

@@ -37,7 +37,7 @@ public class Library {
         Scanner scanner = new Scanner(System.in);
         System.out.println("\"" + nameOfBook + "\" is restored in the library database");
         System.out.println("THANK YOU!");
-        scanner.close();
+
     }
 
     @Override
